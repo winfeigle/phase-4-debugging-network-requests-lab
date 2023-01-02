@@ -70,7 +70,11 @@ developing your own process.
 - Update the number of likes for a toy
 
   - How I debugged:
+    1. Inserted a byebug, everything looked normal in terminal.
+    2. On screen error: "Unhandled Rejection (SyntaxError): Unexpected end of JSON input"
+    3. json needed to be returned from backend... added render json.
 
 - Donate a toy to Goodwill (and delete it from our database)
-
   - How I debugged:
+    1. No method error.
+    2. Destroy route needed to be added to resources from routes.rb
