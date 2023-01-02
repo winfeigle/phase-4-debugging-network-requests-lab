@@ -63,6 +63,9 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    1. Saw 500 Internal Error in network/console
+    2. Checked rails server terminal to see: "NameError (uninitialized constant ToysController::Toys)"
+    3. create route was using Toys.create rather than Toy.create
 
 - Update the number of likes for a toy
 
